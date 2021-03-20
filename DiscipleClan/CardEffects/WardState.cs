@@ -12,7 +12,8 @@ namespace DiscipleClan.CardEffects
     {
         public string ID;
         public int floor = -1;
-        public ParticleSystem wardPresentVfx;
+        // TODO: Find out what this is and fix what needs to be fixed
+        //public ParticleSystem wardPresentVfx;
         public string tooltipTitleKey;
         public string tooltipBodyKey;
         public Sprite wardIcon;
@@ -22,11 +23,11 @@ namespace DiscipleClan.CardEffects
         {
             this.floor = floor;
 
-            //!saveManager.PreviewMode && 
-            if (wardPresentVfx != null)
-            {
-                wardPresentVfx.Play();
-            }
+            ////!saveManager.PreviewMode && 
+            //if (wardPresentVfx != null)
+            //{
+            //    wardPresentVfx.Play();
+            //}
         }
 
         public virtual IEnumerator OnTrigger(List<CharacterState> targets) { yield break; }

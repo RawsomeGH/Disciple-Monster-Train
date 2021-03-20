@@ -25,7 +25,8 @@ namespace DiscipleClan.Cards.Prophecy
                         ParamBool = true,
                         ParamInt = 2,
                         AdditionalParamInt = 99,
-                        TargetMode = TargetMode.Deck,
+                        // TODO: Check correct enum value (was "TargetMode.Deck")
+                        TargetMode = TargetMode.DrawPile,
                     }
                 },
             };

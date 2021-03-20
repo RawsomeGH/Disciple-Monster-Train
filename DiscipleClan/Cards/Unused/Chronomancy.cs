@@ -24,7 +24,8 @@ namespace DiscipleClan.Cards.Unused
                         EffectStateName = typeof(CardEffectScryApplyUpgrade).AssemblyQualifiedName,
                         ParamInt = 8,
                         AdditionalParamInt = 1,
-                        TargetMode = TargetMode.Deck,
+                        // TODO: Check correct enum value (was "TargetMode.Deck")
+                        TargetMode = TargetMode.DrawPile,
                         ParamCardUpgradeData = new CardUpgradeDataBuilder
                         {
                             HideUpgradeIconOnCard = true,

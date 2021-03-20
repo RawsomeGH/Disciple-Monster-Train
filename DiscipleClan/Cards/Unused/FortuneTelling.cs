@@ -23,7 +23,8 @@ namespace DiscipleClan.Cards.Unused
                         //EffectStateName = typeof(CardEffectScryConsumeFortune).AssemblyQualifiedName,
                         ParamInt = 4,
                         AdditionalParamInt = 1,
-                        TargetMode = TargetMode.Deck,
+                        // TODO: Check correct enum value (was "TargetMode.Deck")
+                        TargetMode = TargetMode.DrawPile,
                     }
                 },
 

@@ -23,7 +23,8 @@ namespace DiscipleClan.Cards.Prophecy
                     {
                         EffectStateName = typeof(CardEffectChooseDraw).AssemblyQualifiedName,
                         ParamInt = 1,
-                        TargetMode = TargetMode.Deck,
+                        // TODO: Check correct enum value (was "TargetMode.Deck")
+                        TargetMode = TargetMode.DrawPile,
                     }
                 },
                 TraitBuilders = new List<CardTraitDataBuilder>

@@ -46,9 +46,11 @@ namespace DiscipleClan.CardEffects
                 DeckScreen deckScreen = screen as DeckScreen;
                 deckScreen.Setup(new DeckScreen.Params()
                 {
-                    mode = DeckScreen.Mode.CardSelection,
+                    // TODO: Check correct enum value (was "DeckScreen.Mode.CardSelection")
+                    mode = DeckScreen.Mode.CardEffectSelection,
                     showCancel = true,
-                    targetMode = TargetMode.Deck,
+                    // TODO: Check correct enum value (was "TargetMode.Deck")
+                    targetMode = TargetMode.DrawPile,
                     titleKey = cardEffectState.GetParentCardState().GetTitleKey(),
                     instructionsKey = GetTooltipBaseKey(),
                     numCardsSelectable = cardEffectState.GetAdditionalParamInt(),

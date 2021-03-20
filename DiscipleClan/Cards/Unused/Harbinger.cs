@@ -49,7 +49,8 @@ namespace DiscipleClan.Cards.Unused
                                 EffectStateName = typeof(CardEffectScryUnitsDrawFree).AssemblyQualifiedName,
                                 ParamInt = 5,
                                 AdditionalParamInt = 1,
-                                TargetMode = TargetMode.Deck,
+                                // TODO: Check correct enum value (was "TargetMode.Deck")
+                                TargetMode = TargetMode.DrawPile,
                             }
                         }
                     }
